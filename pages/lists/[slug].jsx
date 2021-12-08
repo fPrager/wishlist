@@ -11,6 +11,7 @@ const List = ({ wishes }) => {
             {
                 wishes.map((wish) => (
                     <div className={styles.card} key={wish.name}>
+                        <div className={styles.bell}></div>
                         <h2>{wish.name}</h2>
                         <p>{wish.description}</p>
                     </div>
