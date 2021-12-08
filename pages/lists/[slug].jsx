@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 import fetchWishes from '../../util/fetch-wishes';
+import Image from 'next/image';
 
 const List = ({ wishes }) => {
     return (
@@ -11,7 +12,7 @@ const List = ({ wishes }) => {
             {
                 wishes.map((wish) => (
                     <div className={styles.card} key={wish.name}>
-                        <div className={styles.bell}></div>
+                        <Image src="https://upload.wikimedia.org/wikipedia/commons/2/22/Christmas_bells.png" width="50" height="50" className={styles.bell} />
                         <h2>{wish.name}</h2>
                         <p>{wish.description}</p>
                     </div>
