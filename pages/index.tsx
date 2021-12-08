@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <div className={styles.conainer}>
       
         <h1 className={styles.title}>
-          Merry Christmas Mr Konsum
+          Merry Christmas
         </h1>
         <p className={styles.description}>
           <Link href="/list">

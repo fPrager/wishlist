@@ -12,6 +12,14 @@
   align-items: center;
 }
 
+.background {
+  background-color: rgba(0,0,0,0.8);
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .footer {
   display: flex;
   flex: 1;
