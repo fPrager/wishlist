@@ -1,16 +1,40 @@
 {
     "general": [
         {
-            "name": "New Game Boy",
-            "description": "Nintendo is so cooljo ey."
-        },
-        {
             "name": "World Peace",
             "description": "Nintendo is so cooljo ey."
         },
         {
             "name": "Coffee",
             "description": "Nintendo is so cooljo ey."
+        }
+    ],
+    "mapa": [
+        {
+            "name": "New Game Boy",
+            "description": "Nintendo is so cooljo ey."
+        },
+        {
+            "name": "Kuchen",
+            "description": "Mhh lecker kuchen!"
+        },
+        {
+            "name": "Lego",
+            "description": "was mit star wars"
+        }
+    ],
+    "ompi": [
+        {
+            "name": "Ne Knarre",
+            "description": "Fett boom boom!"
+        },
+        {
+            "name": "Killerspiel",
+            "description": "Moorhuhn 2001 oder GTA 3"
+        },
+        {
+            "name": "Axt",
+            "description": "so ne lange große"
         }
     ]
 }
