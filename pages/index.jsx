@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-import Wishes from '../public/wishes.json';
+import fetchWishes from '../util/fetch-wishes';
 
 const Home = ({ wishListNames }) => {
   return (
@@ -21,10 +21,12 @@ const Home = ({ wishListNames }) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
+  const wishes = await fetchWishes();
+
   return {
       props:{
-          wishListNames: Object.keys(Wishes)
+          wishListNames: Object.keys(wishes)
       }
   }
 }

@@ -1,7 +1,6 @@
 import Link from 'next/link';
-
-import Wishes from '../../public/wishes.json';
 import styles from '../../styles/Home.module.css';
+import fetchWishes from '../../util/fetch-wishes';
 
 const List = ({ wishes }) => {
     return (
@@ -24,20 +23,14 @@ const List = ({ wishes }) => {
     );
 }
 
-export const getStaticProps = async (ctx) => {
+export const getServerSideProps= async (ctx) => {
+    const wishes = await fetchWishes();
+
     const { slug } = ctx.params
     return {
         props:{
-            wishes: Wishes[slug],
+            wishes: wishes[slug],
         }
-    }
-}
-
-export const getStaticPaths = () => {
-    const wishListNames = Object.keys(Wishes);
-    return {
-        paths: wishListNames.map((name) => ({ params: { slug: name }})),
-        fallback: false
     }
 }
 
