@@ -37,7 +37,7 @@ export const getStaticPaths = () => {
     const wishListNames = Object.keys(Wishes);
     return {
         paths: wishListNames.map((name) => ({ params: { slug: name }})),
-        fallback: true
+        fallback: false
     }
 }
 
